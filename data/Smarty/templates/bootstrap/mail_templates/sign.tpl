@@ -20,11 +20,11 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
 
-Rooibos & Macadamia - AIWELL ONLINE SHOP
+EC CUBE + Twitter Bootstrap
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 住所） 〒791-8067 愛媛県松山市古三津6丁目13-18
 電話） 089-967-6551
-メール） info@aiwell.jp
-ウェブ） http://aiwell.jp
-担当） 橘川 慎也
-営業時間） 10:00 から18:00 まで
+メール） demo@aiwell.jp
+ウェブ） http://demo.aiwell.jp
+担当） 山田 太郎
+営業時間） 10:00 から17:00 まで
