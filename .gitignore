@@ -1,0 +1,59 @@
+# files
+.DS_Store
+.htaccess
+
+# NetBeans DIR
+nbproject/
+
+# EC CUBE root DIR
+COPYING
+docs/
+test/
+
+# EC CUBE data DIR
+data/cache/
+data/class/
+data/class_extends/
+data/config/
+data/download/
+data/downloads/
+data/fonts/
+data/include/
+data/logs/
+data/module/
+data/Smarty/config/
+data/Smarty/templates/admin/
+data/Smarty/templates/bootstrap/_packages/
+data/Smarty/templates/default/
+data/Smarty/templates/mobile/
+data/Smarty/templates/sphone/
+data/Smarty/templates_c/
+data/smarty_extends/
+data/upload/
+
+# EC CUBE html DIR
+html/admin/css/
+html/install/
+html/js/
+html/plugin/
+html/upload/
+html/user_data/css/
+html/user_data/include/
+html/user_data/packages/admin/
+html/user_data/packages/default/
+html/user_data/packages/mobile/
+html/user_data/packages/sphone/
+html/user_data/templates/
+
+# EC CUBE filetype
+*.csv
+*.htm
+*.html
+*.inc
+*.log
+*.map
+*.pdf
+*.php
+*.serial
+*.ttf
+*.txt
