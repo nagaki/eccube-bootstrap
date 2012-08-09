@@ -113,5 +113,7 @@ jQuery(function ($) {
     e.preventDefault();
     $(this).tab('show');
   });
+  
+  $('#userLogin .modal-body').append('<div class="alert alert-info" style="margin-bottom: 0;"><button class="close" data-dismiss="alert">&times;</button><dl class="dl-horizontal" style="margin-bottom: 0;"><dt>仮メールアドレス</dt><dd>demo@aiwell.jp</dd><dt>仮パスワード</dt><dd>password</dd></dl></div>');
 
 });
