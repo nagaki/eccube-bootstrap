@@ -45,7 +45,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<!--{$smarty.const.HTTP_URL}-->rss/<!--{$smarty.const.DIR_INDEX_PATH}-->">
     <link rel="shortcut icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico">
 
-    <title><!--{if $tpl_subtitle|strlen >= 1}--><!--{$tpl_subtitle|h}--> | <!--{elseif $tpl_title|strlen >= 1}--><!--{$tpl_title|h}--> | <!--{/if}--><!--{$arrSiteInfo.shop_name|h}--> | ルイボスティーの通販専門店</title>
+    <title><!--{if $tpl_subtitle|strlen >= 1}--><!--{$tpl_subtitle|h}--> | <!--{elseif $tpl_title|strlen >= 1}--><!--{$tpl_title|h}--> | <!--{/if}--><!--{$arrSiteInfo.shop_name|h}--></title>
 
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
