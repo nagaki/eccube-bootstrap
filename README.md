@@ -8,7 +8,7 @@ EC CUBE用のTwitter Bootstrapテーマ
 + **EC CUBE**
 v2.12.1
 + **Bootstrap**
-v2.0.4
+v2.1
 
 デモページ
 -----------
