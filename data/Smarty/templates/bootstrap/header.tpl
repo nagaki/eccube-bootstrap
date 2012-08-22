@@ -25,7 +25,7 @@
     <input type="hidden" name="mode" value="login">
     <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->">
     <input type="hidden" name="url" value="<!--{$smarty.server.REQUEST_URI|h}-->">
-    <section class="navbar navbar-fixed-top">
+    <section class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">

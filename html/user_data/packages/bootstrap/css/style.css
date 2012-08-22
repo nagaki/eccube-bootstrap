@@ -4,6 +4,11 @@ body {
   padding-top: 60px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 
 /*----main frame
   --------------------------------*/
@@ -15,6 +20,11 @@ body {
 
 #two_maincolumn_right {
   float: right;
+}
+
+#global-title {
+  font-size: 100%;
+  line-height: 1;
 }
 
 .navbar .brand {
@@ -83,8 +93,8 @@ body {
   padding-bottom: 10px;
 }
 
-#news-area footer {
-  padding: 5px;
+#news-contents .news-post {
+  margin-bottom: 10px;
 }
 
 #recommend-contents h2 {
@@ -365,13 +375,6 @@ body {
 }
 
 
-/*----original page shipping
-  --------------------------------*/
-#yupack-table tbody tr td:last-child,
-#takkyu-table tbody tr td:last-child {
-  text-align: right;
-}
-
 /*----window popup
   --------------------------------*/
 .popup-window > header {
@@ -441,4 +444,17 @@ body {
 .total-price {
   color: #000;
   font-weight: bold;
+}
+
+.btn-block-body {
+   max-width: 400px;
+   margin: 0 auto 10px;
+}
+
+.btn-block-body .btn{
+  margin-bottom:20px;
+}
+
+.btn-block-body .btn:last-child{
+  margin-bottom:0;
 }

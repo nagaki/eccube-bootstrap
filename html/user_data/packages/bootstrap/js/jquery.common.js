@@ -18,7 +18,8 @@ jQuery(function ($) {
 
   // bootstrap->popover
   $('#add-favorite-product, #review-button, #search-postal-code').popover({
-    placement: 'top'
+    placement: 'top',
+    trigger: 'hover'
   });
 
   // bootstrap->tooltip (support HTML5 browser only)

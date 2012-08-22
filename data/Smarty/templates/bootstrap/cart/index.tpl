@@ -55,17 +55,24 @@
     <aside class="totalmoney-area">
       <!--{* カゴの中に商品がある場合にのみ表示 *}-->
       <!--{if count($cartKeys) > 1}-->
-      <span class="attentionSt"><!--{foreach from=$cartKeys item=key name=cartKey}--><!--{$arrProductType[$key]}--><!--{if !$smarty.foreach.cartKey.last}-->、<!--{/if}--><!--{/foreach}-->は同時購入できません。<br>
-        お手数ですが、個別に購入手続きをお願い致します。
-      </span>
+      <p class="alert">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong><!--{foreach from=$cartKeys item=key name=cartKey}--><!--{$arrProductType[$key]}--><!--{if !$smarty.foreach.cartKey.last}-->、<!--{/if}--><!--{/foreach}-->は同時購入できません。</strong><br>お手数ですが、個別に購入手続きをお願い致します。
+      </p>
       <!--{/if}-->
 
       <!--{if strlen($tpl_error) != 0}-->
-      <p class="attention"><!--{$tpl_error|h}--></p>
+      <p class="alert">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <!--{$tpl_error|h}-->
+      </p>
       <!--{/if}-->
 
       <!--{if strlen($tpl_message) != 0}-->
-      <p class="attention"><!--{$tpl_message|h|nl2br}--></p>
+      <p class="alert">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <!--{$tpl_message|h|nl2br}-->
+      </p>
       <!--{/if}-->
     </aside>
     <!--{if count($cartItems) > 0}-->
@@ -130,7 +137,7 @@
           <tbody>
             <!--{foreach from=$cartItems[$key] item=item}-->
             <tr>
-              <td><a href="?" onclick="fnFormModeSubmit('form<!--{$key}-->', 'delete', 'cart_no', '<!--{$item.cart_no}-->'); return false;">削除</a>
+              <td><a href="?" onclick="fnFormModeSubmit('form<!--{$key}-->', 'delete', 'cart_no', '<!--{$item.cart_no}-->'); return false;"><i class="icon-remove"></i></a>
               </td>
               <td>
                 <a class="expansion product-thumbnail" target="_blank"
@@ -151,10 +158,11 @@
               <td>
                 <!--{$item.price|sfCalcIncTax|number_format}-->円
               </td>
-              <td><!--{$item.quantity}-->
-                <div class="btn-group" id="quantity_level">
-                  <button class="btn" href="?" onclick="fnFormModeSubmit('form<!--{$key}-->','up','cart_no','<!--{$item.cart_no}-->'); return false">+</button>
-                  <button class="btn" href="?" onclick="fnFormModeSubmit('form<!--{$key}-->','down','cart_no','<!--{$item.cart_no}-->'); return false">-</button>
+              <td>
+                <p><span class="badge badge-info"><!--{$item.quantity}--></span></p>
+                <div class="btn-group btn-group-vertical" id="quantity_level">
+                  <button class="btn" href="?" onclick="fnFormModeSubmit('form<!--{$key}-->','up','cart_no','<!--{$item.cart_no}-->'); return false"><i class="icon-plus-sign"></i></button>
+                  <button class="btn" href="?" onclick="fnFormModeSubmit('form<!--{$key}-->','down','cart_no','<!--{$item.cart_no}-->'); return false"><i class="icon-minus-sign"></i></button>
                 </div>
               </td>
               <td><!--{$item.total_inctax|number_format}-->円</td>
@@ -198,7 +206,10 @@
     </section>
     <!--{/foreach}-->
     <!--{else}-->
-    <p><span class="attention">※ 現在カート内に商品はございません。</span></p>
+    <p class="alert">
+      <a href="#" class="close" data-dismiss="alert">&times;</a>
+      現在カート内に商品はございません。
+    </p>
     <!--{/if}-->
   </article>
 </section>

@@ -37,7 +37,7 @@
   </div>
   <footer>
     <div class="form-actions">
-      <a class="btn" href="<!--{$smarty.const.CART_URLPATH}-->">かごの中を見る</a>
+      <a class="btn btn-block" href="<!--{$smarty.const.CART_URLPATH}-->">かごの中を見る</a>
     </div>  
   </footer>
 </section>
