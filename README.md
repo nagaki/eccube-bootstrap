@@ -1,4 +1,4 @@
-eccube-twitterbootstrap
+eccube bootstrap
 =======================
 
 EC CUBE用のTwitter Bootstrapテーマ
@@ -7,7 +7,7 @@ EC CUBE用のTwitter Bootstrapテーマ
 -----------
 + **EC CUBE**
 v2.12.1
-+ **Bootstrap**
++ **Twitter Bootstrap**
 v2.1
 
 デモページ
