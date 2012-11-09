@@ -15,6 +15,6 @@ EC CUBE用のTwitter Bootstrapテーマ
 
 インストール
 ------
-1. [eccube-twitterbootstrap.tar.gz](https://github.com/downloads/nagakiatsushi/eccube-bootstrap/eccube-twitterbootstrap.tar.gz) からファイルをダウンロード
+1. [eccube-bootstrap.tar.gz](https://github.com/downloads/nagakiatsushi/eccube-bootstrap/eccube_bootstrap.tar.gz) からファイルをダウンロード
 2. 管理画面＞デザイン管理＞PC＞テンプレート追加 からファイルを登録
 3. 管理画面＞デザイン管理＞PC＞テンプレート設定 でテンプレートを変更
