@@ -20,7 +20,7 @@ EC CUBE用のTwitter Bootstrapテーマ
 3. 管理画面＞デザイン管理＞PC＞テンプレート設定 でテンプレートを変更
 
 
-スマートフォンでも同テーマを使用
+スマートフォン対応
 ------
 
     // data/class/SC_Display.php:141
@@ -28,12 +28,12 @@ EC CUBE用のTwitter Bootstrapテーマ
     function detectDevice() {
 
       $nu = new Net_UserAgent_Mobile();
-      /* $su = new SC_SmartphoneUserAgent_Ex(); - コメントアウト */
+      $su = new SC_SmartphoneUserAgent_Ex();  <-- 削除
 
       if ($nu->isMobile()) {
         return DEVICE_TYPE_MOBILE;
-      /* } elseif ($su->isSmartphone()) {
-        return DEVICE_TYPE_SMARTPHONE; - コメントアウト */
+      } elseif ($su->isSmartphone()) {        <-- 削除
+        return DEVICE_TYPE_SMARTPHONE;        <-- 削除
       } else {
         return DEVICE_TYPE_PC;
       }
