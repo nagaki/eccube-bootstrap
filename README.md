@@ -4,9 +4,6 @@ eccube bootstrap
 EC CUBE用のTwitter Bootstrapテーマ
 
 
-デモページ [http://demo.aiwell.jp](http://demo.aiwell.jp "EC CUBE + Twitter bootstrap")
-
-
 バージョン
 ------
 + **EC CUBE** (version 2.12.1)
@@ -20,7 +17,7 @@ EC CUBE用のTwitter Bootstrapテーマ
 3. 管理画面＞デザイン管理＞PC＞テンプレート設定 でテンプレートを変更
 
 
-スマートフォン対応
+レスポンシブの適用
 ------
 
     // data/class/SC_Display.php:141

@@ -2,9 +2,6 @@
 .DS_Store
 .htaccess
 
-# NetBeans DIR
-nbproject/
-
 # EC CUBE root DIR
 COPYING
 docs/
