@@ -62,10 +62,12 @@
     </noscript>
 
     <header>
-      <section class="navbar navbar-fixed-top">
+      <section class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
           <div class="container">
-            <h1 class="brand" id="global-title"><!--{$arrSiteInfo.shop_name|h}--></h1>
+            <h1 id="global-title">
+              <span class="brand"><!--{$arrSiteInfo.shop_name|h}--></span>
+            </h1>
           </div>
         </div>
       </section>

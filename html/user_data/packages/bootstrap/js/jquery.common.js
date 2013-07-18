@@ -75,7 +75,7 @@ jQuery(function ($) {
     }
     return false;
   }
-  
+
   function changeCollapseIn (a) {
     if (a < 640) {
       $('#collapseOne, #collapseTwo, #collapseThree').addClass('collapse');
@@ -109,12 +109,12 @@ jQuery(function ($) {
 
   // normal->style form button align center
   $('.form-actions:not(.form-horizontal .form-actions)').css('text-align', 'center');
-  
+
   $('#shopping-deliv-tabs a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
   });
-  
-  $('#userLogin .modal-body').append('<div class="alert alert-info" style="margin-bottom: 0;"><button class="close" data-dismiss="alert">&times;</button><dl class="dl-horizontal" style="margin-bottom: 0;"><dt>仮メールアドレス</dt><dd>demo@aiwell.jp</dd><dt>仮パスワード</dt><dd>password</dd></dl></div>');
+
+  $('#errorHeader').addClass('container alert');
 
 });
