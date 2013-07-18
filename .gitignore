@@ -6,6 +6,7 @@
 COPYING
 docs/
 test/
+tests/
 
 # EC CUBE data DIR
 data/cache/
@@ -54,3 +55,4 @@ html/user_data/templates/
 *.serial
 *.ttf
 *.txt
+*.xml
