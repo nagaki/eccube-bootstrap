@@ -61,3 +61,6 @@ html/user_data/templates/
 .travis.yml
 composer.json
 config.rb
+.bundle/
+Gemfile.lock
+vendor/
