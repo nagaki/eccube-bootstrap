@@ -2,7 +2,7 @@
 /*
  * This file is part of EC-CUBE
  *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ * Copyright(c) 2000-2013 LOCKON CO.,LTD. All Rights Reserved.
  *
  * http://www.lockon.co.jp/
  *
@@ -21,19 +21,14 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 *}-->
-
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="エラー"}-->
 
-<section class="page-body">
-  <header>
-    <h1>エラー</h1>
-  </header>
-  <div class="alert alert-error">
-    <!--{$tpl_error}-->
-  </div>
-  <footer class="form-actions">
-    <a class="btn" href="javascript:window.close()" id="close">閉じる</a>
-  </footer>
-</section>
+<div id="compbox">
+    <span class="red"><!--{$tpl_error}--></span><br />
+</div>
+
+<div class="button">
+    <a href="javascript:window.close()"><img class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_close.gif" alt="閉じる" /></a>
+</div>
 
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_footer.tpl"}-->

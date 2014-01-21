@@ -2,7 +2,7 @@
 <!--{*
  * This file is part of EC-CUBE
  *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ * Copyright(c) 2000-2013 LOCKON CO.,LTD. All Rights Reserved.
  *
  * http://www.lockon.co.jp/
  *
@@ -34,7 +34,7 @@
         <description><![CDATA[
             <div class="hproduct">
                 <a href="<!--{$smarty.const.HTTP_URL}-->products/detail.php?product_id=<!--{$arrProduct.product_id}-->" rel="product">
-                    <img src="<!--{$arrProduct.main_list_image}-->" alt="<!--{$arrProduct.product_name|h|sfMbConvertEncoding:$encode}-->" class="product-thumb">
+                    <img src="<!--{$arrProduct.main_list_image}-->" alt="<!--{$arrProduct.product_name|h|sfMbConvertEncoding:$encode}-->" class="product-thumb" />
                 </a>
                 <div class="product-title"><a href="<!--{$smarty.const.HTTP_URL}-->products/detail.php?product_id=<!--{$arrProduct.product_id}-->" rel="product"><!--{$arrProduct.product_name|h|sfMbConvertEncoding:$encode}--></a></div>
                 商品コード：<!--{$arrProduct.product_code_max|h|sfMbConvertEncoding:$encode}-->
