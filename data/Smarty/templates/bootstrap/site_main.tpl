@@ -35,18 +35,18 @@
 <div class="col-md-12">
   <!--{* ▼HeaderHeaderTop COLUMN*}-->
   <!--{if $arrPageLayout.HeaderTopNavi|@count > 0}-->
-  <div id="headertopcolumn">
-      <!--{* ▼上ナビ *}-->
-      <!--{foreach key=HeaderTopNaviKey item=HeaderTopNaviItem from=$arrPageLayout.HeaderTopNavi}-->
-          <!-- ▼<!--{$HeaderTopNaviItem.bloc_name}--> -->
-          <!--{if $HeaderTopNaviItem.php_path != ""}-->
-              <!--{include_php file=$HeaderTopNaviItem.php_path items=$HeaderTopNaviItem}-->
-          <!--{else}-->
-              <!--{include file=$HeaderTopNaviItem.tpl_path items=$HeaderTopNaviItem}-->
-          <!--{/if}-->
-          <!-- ▲<!--{$HeaderTopNaviItem.bloc_name}--> -->
-      <!--{/foreach}-->
-      <!--{* ▲上ナビ *}-->
+  <div id="headertopcolumn" class="eb-header-columns row">
+    <!--{* ▼上ナビ *}-->
+    <!--{foreach key=HeaderTopNaviKey item=HeaderTopNaviItem from=$arrPageLayout.HeaderTopNavi}-->
+      <!-- ▼<!--{$HeaderTopNaviItem.bloc_name}--> -->
+      <!--{if $HeaderTopNaviItem.php_path != ""}-->
+        <!--{include_php file=$HeaderTopNaviItem.php_path items=$HeaderTopNaviItem}-->
+      <!--{else}-->
+        <!--{include file=$HeaderTopNaviItem.tpl_path items=$HeaderTopNaviItem}-->
+      <!--{/if}-->
+      <!-- ▲<!--{$HeaderTopNaviItem.bloc_name}--> -->
+    <!--{/foreach}-->
+    <!--{* ▲上ナビ *}-->
   </div>
   <!--{/if}-->
   <!--{* ▲HeaderHeaderTop COLUMN*}-->
@@ -183,19 +183,19 @@
   <div class="link-to-top container">
     <a href="#header">このページの先頭へ</a>
   </div>
-  <footer id="footer" class="ec-site-footer row">
+  <footer id="footer" class="eb-site-footer row">
     <!--{* ▼FooterBottom COLUMN*}-->
     <!--{if $arrPageLayout.FooterBottomNavi|@count > 0}-->
-    <div id="footerbottomcolumn" class="ec-footer-column container">
+    <div id="footerbottomcolumn" class="eb-footer-columns container">
       <!--{* ▼上ナビ *}-->
       <!--{foreach key=FooterBottomNaviKey item=FooterBottomNaviItem from=$arrPageLayout.FooterBottomNavi}-->
-      <!-- ▼<!--{$FooterBottomNaviItem.bloc_name}--> -->
-      <!--{if $FooterBottomNaviItem.php_path != ""}-->
-      <!--{include_php file=$FooterBottomNaviItem.php_path items=$FooterBottomNaviItem}-->
-      <!--{else}-->
-      <!--{include file=$FooterBottomNaviItem.tpl_path items=$FooterBottomNaviItem}-->
-      <!--{/if}-->
-      <!-- ▲<!--{$FooterBottomNaviItem.bloc_name}--> -->
+        <!-- ▼<!--{$FooterBottomNaviItem.bloc_name}--> -->
+        <!--{if $FooterBottomNaviItem.php_path != ""}-->
+          <!--{include_php file=$FooterBottomNaviItem.php_path items=$FooterBottomNaviItem}-->
+        <!--{else}-->
+          <!--{include file=$FooterBottomNaviItem.tpl_path items=$FooterBottomNaviItem}-->
+        <!--{/if}-->
+        <!-- ▲<!--{$FooterBottomNaviItem.bloc_name}--> -->
       <!--{/foreach}-->
       <!--{* ▲上ナビ *}-->
     </div>

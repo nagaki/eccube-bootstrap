@@ -11,7 +11,22 @@ body {
   @extend .alert-danger;
 }
 
-.ec-site-footer {
+.eb-header-columns {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.eb-header-column {
+  padding: 10px;
+}
+.eb-header-pr {
+  background-color: darkkhaki;
+  color: white;
+  p {
+    color: beige;
+  }
+}
+
+.eb-site-footer {
   background-color: #eee;
   border-top: 1px solid #ccc;
 }
@@ -19,7 +34,7 @@ body {
   margin-bottom: 10px;
   text-align: right;
 }
-.ec-footer-column {
+.eb-footer-columns {
   border-bottom: 1px dotted #ccc;
   margin-bottom: 20px;
 }

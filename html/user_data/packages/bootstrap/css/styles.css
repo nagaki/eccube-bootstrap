@@ -7681,19 +7681,40 @@ body {
 }
 
 /* line 14, ../../../../../sass/styles.scss */
-.ec-site-footer {
+.eb-header-columns {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* line 18, ../../../../../sass/styles.scss */
+.eb-header-column {
+  padding: 10px;
+}
+
+/* line 21, ../../../../../sass/styles.scss */
+.eb-header-pr {
+  background-color: darkkhaki;
+  color: white;
+}
+/* line 24, ../../../../../sass/styles.scss */
+.eb-header-pr p {
+  color: beige;
+}
+
+/* line 29, ../../../../../sass/styles.scss */
+.eb-site-footer {
   background-color: #eee;
   border-top: 1px solid #ccc;
 }
 
-/* line 18, ../../../../../sass/styles.scss */
+/* line 33, ../../../../../sass/styles.scss */
 .link-to-top {
   margin-bottom: 10px;
   text-align: right;
 }
 
-/* line 22, ../../../../../sass/styles.scss */
-.ec-footer-column {
+/* line 37, ../../../../../sass/styles.scss */
+.eb-footer-columns {
   border-bottom: 1px dotted #ccc;
   margin-bottom: 20px;
 }
