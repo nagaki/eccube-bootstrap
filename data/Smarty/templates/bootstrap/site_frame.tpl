@@ -61,7 +61,9 @@
 
   <body class="<!--{$tpl_page_class_name|h}-->">
     <!--{include file='./site_main.tpl'}-->
-    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script>
+    <!--script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.js"></script>
     <!--script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.legacy.js"></script-->
     <!--{if $tpl_page_class_name === "LC_Page_Abouts"}-->

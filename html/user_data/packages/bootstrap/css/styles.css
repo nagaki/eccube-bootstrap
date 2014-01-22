@@ -5668,28 +5668,29 @@ a.thumbnail.active {
 }
 
 /* line 9, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert {
+.alert, #errorHeader {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
 /* line 16, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert h4 {
+.alert h4, #errorHeader h4 {
   margin-top: 0;
   color: inherit;
 }
 /* line 22, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert .alert-link {
+.alert .alert-link, #errorHeader .alert-link {
   font-weight: bold;
 }
 /* line 28, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert > p,
-.alert > ul {
+.alert > p, #errorHeader > p,
+.alert > ul,
+#errorHeader > ul {
   margin-bottom: 0;
 }
 /* line 31, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert > p + p {
+.alert > p + p, #errorHeader > p + p {
   margin-top: 5px;
 }
 
@@ -5751,17 +5752,17 @@ a.thumbnail.active {
 }
 
 /* line 65, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert-danger {
+.alert-danger, #errorHeader {
   background-color: #f2dede;
   border-color: #ebccd1;
   color: #a94442;
 }
 /* line 403, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.alert-danger hr {
+.alert-danger hr, #errorHeader hr {
   border-top-color: #e4b9c0;
 }
 /* line 406, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.alert-danger .alert-link {
+.alert-danger .alert-link, #errorHeader .alert-link {
   color: #843534;
 }
 

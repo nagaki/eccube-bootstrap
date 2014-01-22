@@ -1,3 +1,8 @@
 // customize bootstrap variables here:
 @import "variables";
 @import "bootstrap";
+
+#errorHeader {
+  @extend .alert;
+  @extend .alert-danger;
+}

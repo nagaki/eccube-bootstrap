@@ -24,10 +24,15 @@
         <!--{$GLOBAL_ERR}-->
         <noscript>
             <p>JavaScript を有効にしてご利用下さい.</p>
-        </noscript>
+          </noscript>
+            <!--{* ▼HEADER *}-->
+            <!--{if $arrPageLayout.header_chk != 2}-->
+                <!--{include file= $header_tpl}-->
+            <!--{/if}-->
+            <!--{* ▲HEADER *}-->
 
-        <div class="frame_outer">
-            <a name="top" id="top"></a>
+
+        <div class="frame_outer container bs-docs-container">
 
             <!--{* ▼HeaderHeaderTop COLUMN*}-->
             <!--{if $arrPageLayout.HeaderTopNavi|@count > 0}-->
@@ -46,12 +51,6 @@
                 </div>
             <!--{/if}-->
             <!--{* ▲HeaderHeaderTop COLUMN*}-->
-            <!--{* ▼HEADER *}-->
-            <!--{if $arrPageLayout.header_chk != 2}-->
-                <!--{include file= $header_tpl}-->
-            <!--{/if}-->
-            <!--{* ▲HEADER *}-->
-
             <div id="container" class="clearfix">
 
                 <!--{* ▼TOP COLUMN*}-->
