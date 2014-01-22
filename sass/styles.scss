@@ -2,7 +2,24 @@
 @import "variables";
 @import "bootstrap";
 
+body {
+  padding-top: 50px;
+}
+
 #errorHeader {
   @extend .alert;
   @extend .alert-danger;
+}
+
+.ec-site-footer {
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+}
+.link-to-top {
+  margin-bottom: 10px;
+  text-align: right;
+}
+.ec-footer-column {
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 20px;
 }

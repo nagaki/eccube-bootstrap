@@ -7675,3 +7675,25 @@ td.visible-print {
     display: none !important;
   }
 }
+/* line 5, ../../../../../sass/styles.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 14, ../../../../../sass/styles.scss */
+.ec-site-footer {
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+}
+
+/* line 18, ../../../../../sass/styles.scss */
+.link-to-top {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+/* line 22, ../../../../../sass/styles.scss */
+.ec-footer-column {
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 20px;
+}

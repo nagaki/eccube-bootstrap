@@ -22,7 +22,7 @@
 
 <!--▼HEADER-->
 <!--{strip}-->
-        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" id="header_wrap" role="banner">
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" id="header" role="banner">
           <div id="header" class="clearfix container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header_utility">
@@ -57,9 +57,5 @@
             </div>
         </div>
     </header>
-            <div id="logo_area">
-                <p id="site_description">EC-CUBE発!世界中を旅して見つけた立方体グルメを立方隊長が直送！</p>
-                <!--img src="<!--{$TPL_URLPATH}-->img/common/logo.gif" alt="<!--{$arrSiteInfo.shop_name|h}-->"-->
-            </div>
 <!--{/strip}-->
 <!--▲HEADER-->
