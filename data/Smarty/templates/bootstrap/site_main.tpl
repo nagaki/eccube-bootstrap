@@ -21,7 +21,6 @@
  *}-->
 
 <!--{strip}-->
-    <body class="<!--{$tpl_page_class_name|h}-->">
         <!--{$GLOBAL_ERR}-->
         <noscript>
             <p>JavaScript を有効にしてご利用下さい.</p>
@@ -194,6 +193,4 @@
             <!--{/if}-->
             <!--{* ▲FooterBottom COLUMN*}-->
         </div>
-
-    </body>
 <!--{/strip}-->
