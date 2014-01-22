@@ -33,30 +33,28 @@
 <!--{* ▲HEADER *}-->
 
 <div class="col-md-12">
-  <p class="description">EC-CUBE発!世界中を旅して見つけた立方体グルメを立方隊長が直送！</p>
+  <!--{* ▼HeaderHeaderTop COLUMN*}-->
+  <!--{if $arrPageLayout.HeaderTopNavi|@count > 0}-->
+  <div id="headertopcolumn">
+      <!--{* ▼上ナビ *}-->
+      <!--{foreach key=HeaderTopNaviKey item=HeaderTopNaviItem from=$arrPageLayout.HeaderTopNavi}-->
+          <!-- ▼<!--{$HeaderTopNaviItem.bloc_name}--> -->
+          <!--{if $HeaderTopNaviItem.php_path != ""}-->
+              <!--{include_php file=$HeaderTopNaviItem.php_path items=$HeaderTopNaviItem}-->
+          <!--{else}-->
+              <!--{include file=$HeaderTopNaviItem.tpl_path items=$HeaderTopNaviItem}-->
+          <!--{/if}-->
+          <!-- ▲<!--{$HeaderTopNaviItem.bloc_name}--> -->
+      <!--{/foreach}-->
+      <!--{* ▲上ナビ *}-->
+  </div>
+  <!--{/if}-->
+  <!--{* ▲HeaderHeaderTop COLUMN*}-->
 </div>
 
 <div class="frame_outer col-md-12">
   <div class="container">
     <!--{$GLOBAL_ERR}-->
-
-    <!--{* ▼HeaderHeaderTop COLUMN*}-->
-    <!--{if $arrPageLayout.HeaderTopNavi|@count > 0}-->
-    <div id="headertopcolumn">
-        <!--{* ▼上ナビ *}-->
-        <!--{foreach key=HeaderTopNaviKey item=HeaderTopNaviItem from=$arrPageLayout.HeaderTopNavi}-->
-            <!-- ▼<!--{$HeaderTopNaviItem.bloc_name}--> -->
-            <!--{if $HeaderTopNaviItem.php_path != ""}-->
-                <!--{include_php file=$HeaderTopNaviItem.php_path items=$HeaderTopNaviItem}-->
-            <!--{else}-->
-                <!--{include file=$HeaderTopNaviItem.tpl_path items=$HeaderTopNaviItem}-->
-            <!--{/if}-->
-            <!-- ▲<!--{$HeaderTopNaviItem.bloc_name}--> -->
-        <!--{/foreach}-->
-        <!--{* ▲上ナビ *}-->
-    </div>
-    <!--{/if}-->
-    <!--{* ▲HeaderHeaderTop COLUMN*}-->
 
     <!--{* ▼TOP COLUMN*}-->
     <!--{if $arrPageLayout.TopNavi|@count > 0}-->
