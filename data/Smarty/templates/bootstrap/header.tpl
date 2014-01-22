@@ -34,7 +34,7 @@
               <a class="navbar-brand" href="<!--{$smarty.const.TOP_URL}-->"><!--{$arrSiteInfo.shop_name|h}--></a>
             </div>
             <div class="collapse navbar-collapse" id="header_utility" role="navigation">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav navbar-right">
                 <li><a href="<!--{$smarty.const.CART_URL}-->">カゴの中を見る</a></li>
                 <!--div id="headerInternalColumn"-->
                 <!--{* ▼HeaderInternal COLUMN *}-->
