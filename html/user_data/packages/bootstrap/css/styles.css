@@ -2088,42 +2088,62 @@ table th[class*="col-"] {
 }
 
 /* line 422, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.table > thead > tr > .success,
+.table > thead > tr > .success, .table > thead > tr > .today,
 .table > thead > .success > td,
+.table > thead > .today > td,
 .table > thead > .success > th,
+.table > thead > .today > th,
 .table > tbody > tr > .success,
+.table > tbody > tr > .today,
 .table > tbody > .success > td,
+.table > tbody > .today > td,
 .table > tbody > .success > th,
+.table > tbody > .today > th,
 .table > tfoot > tr > .success,
+.table > tfoot > tr > .today,
 .table > tfoot > .success > td,
-.table > tfoot > .success > th {
+.table > tfoot > .today > td,
+.table > tfoot > .success > th,
+.table > tfoot > .today > th {
   background-color: #dff0d8;
 }
 
 /* line 433, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.table-hover > tbody > tr > .success:hover,
+.table-hover > tbody > tr > .success:hover, .table-hover > tbody > tr > .today:hover,
 .table-hover > tbody > .success:hover > td,
-.table-hover > tbody > .success:hover > th {
+.table-hover > tbody > .today:hover > td,
+.table-hover > tbody > .success:hover > th,
+.table-hover > tbody > .today:hover > th {
   background-color: #d0e9c6;
 }
 
 /* line 422, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.table > thead > tr > .danger,
+.table > thead > tr > .danger, .table > thead > tr > .holiday,
 .table > thead > .danger > td,
+.table > thead > .holiday > td,
 .table > thead > .danger > th,
+.table > thead > .holiday > th,
 .table > tbody > tr > .danger,
+.table > tbody > tr > .holiday,
 .table > tbody > .danger > td,
+.table > tbody > .holiday > td,
 .table > tbody > .danger > th,
+.table > tbody > .holiday > th,
 .table > tfoot > tr > .danger,
+.table > tfoot > tr > .holiday,
 .table > tfoot > .danger > td,
-.table > tfoot > .danger > th {
+.table > tfoot > .holiday > td,
+.table > tfoot > .danger > th,
+.table > tfoot > .holiday > th {
   background-color: #f2dede;
 }
 
 /* line 433, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.table-hover > tbody > tr > .danger:hover,
+.table-hover > tbody > tr > .danger:hover, .table-hover > tbody > tr > .holiday:hover,
 .table-hover > tbody > .danger:hover > td,
-.table-hover > tbody > .danger:hover > th {
+.table-hover > tbody > .holiday:hover > td,
+.table-hover > tbody > .danger:hover > th,
+.table-hover > tbody > .holiday:hover > th {
   background-color: #ebcccc;
 }
 
@@ -7717,4 +7737,15 @@ body {
 .eb-footer-columns {
   border-bottom: 1px dotted #ccc;
   margin-bottom: 20px;
+}
+
+/* line 42, ../../../../../sass/styles.scss */
+.nav-stacked ul {
+  margin-left: 15px !important;
+}
+
+/* line 52, ../../../../../sass/styles.scss */
+.eb-sidebar-calendar th,
+.eb-sidebar-calendar td {
+  text-align: center;
 }

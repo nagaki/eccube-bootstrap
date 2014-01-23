@@ -38,3 +38,24 @@ body {
   border-bottom: 1px dotted #ccc;
   margin-bottom: 20px;
 }
+
+.nav-stacked ul {
+  margin-left: 15px !important;
+}
+.eb-list-nested {
+  .active {
+  }
+}
+
+.eb-sidebar-calendar {
+  th,
+  td {
+    text-align: center;
+  }
+}
+.holiday {
+  @extend .danger;
+}
+.today {
+  @extend .success;
+}
