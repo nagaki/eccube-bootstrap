@@ -81,7 +81,7 @@
               サインインしたままにする
             </label>
           </div>
-          <input class="btn" type="submit" value="サインイン">
+          <input class="btn btn-default" type="submit" value="サインイン">
         <!--{/if}-->
       </form>
     </li>

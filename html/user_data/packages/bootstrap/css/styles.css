@@ -7700,51 +7700,56 @@ body {
   padding-top: 50px;
 }
 
-/* line 14, ../../../../../sass/styles.scss */
+/* line 9, ../../../../../sass/styles.scss */
+#errorHeader {
+  margin-top: 10px;
+}
+
+/* line 15, ../../../../../sass/styles.scss */
 .eb-header-columns {
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
 }
 
-/* line 18, ../../../../../sass/styles.scss */
+/* line 19, ../../../../../sass/styles.scss */
 .eb-header-column {
   padding: 10px;
 }
 
-/* line 21, ../../../../../sass/styles.scss */
+/* line 22, ../../../../../sass/styles.scss */
 .eb-header-pr {
   background-color: darkkhaki;
   color: white;
 }
-/* line 24, ../../../../../sass/styles.scss */
+/* line 25, ../../../../../sass/styles.scss */
 .eb-header-pr p {
   color: beige;
 }
 
-/* line 29, ../../../../../sass/styles.scss */
+/* line 30, ../../../../../sass/styles.scss */
 .eb-site-footer {
   background-color: #eee;
   border-top: 1px solid #ccc;
 }
 
-/* line 33, ../../../../../sass/styles.scss */
+/* line 34, ../../../../../sass/styles.scss */
 .link-to-top {
   margin-bottom: 10px;
   text-align: right;
 }
 
-/* line 37, ../../../../../sass/styles.scss */
+/* line 38, ../../../../../sass/styles.scss */
 .eb-footer-columns {
   border-bottom: 1px dotted #ccc;
   margin-bottom: 20px;
 }
 
-/* line 42, ../../../../../sass/styles.scss */
+/* line 43, ../../../../../sass/styles.scss */
 .nav-stacked ul {
   margin-left: 15px !important;
 }
 
-/* line 52, ../../../../../sass/styles.scss */
+/* line 53, ../../../../../sass/styles.scss */
 .eb-sidebar-calendar th,
 .eb-sidebar-calendar td {
   text-align: center;

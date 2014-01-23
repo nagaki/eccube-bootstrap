@@ -9,6 +9,7 @@ body {
 #errorHeader {
   @extend .alert;
   @extend .alert-danger;
+  margin-top: 10px;
 }
 
 .eb-header-columns {
