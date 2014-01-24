@@ -57,16 +57,16 @@
     <!--{/if}-->
     <!--{* ▲Head COLUMN*}-->
     <!--{/strip}-->
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script>
+    <!--script src="<!--{$TPL_URLPATH}-->js/jquery.js"></script-->
 
   </head>
 
   <body class="<!--{$tpl_page_class_name|h}-->">
     <!--{include file='./site_main.tpl'}-->
-    <!--script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script-->
-    <script src="<!--{$TPL_URLPATH}-->js/jquery.js"></script>
     <script src="<!--{$TPL_URLPATH}-->js/bootstrap/bootstrap.min.js"></script>
     <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.js"></script>
-    <!--script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.legacy.js"></script-->
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.legacy.js"></script>
     <!--{if $tpl_page_class_name === "LC_Page_Abouts"}-->
     <!--{if ($smarty.server.HTTPS != "") && ($smarty.server.HTTPS != "off")}-->
     <script src="https://maps-api-ssl.google.com/maps/api/js?sensor=false"></script>
