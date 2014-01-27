@@ -70,13 +70,7 @@
        </p>
        <div class="inputbox">
          <div class="btn_area">
-           <ul>
-             <li>
-               <a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/kiyaku.php">
-                 <img class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_entry.jpg" alt="会員登録をする" />
-               </a>
-             </li>
-           </ul>
+           <a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/kiyaku.php">会員登録をする</a>
          </div>
        </div>
 
@@ -87,11 +81,7 @@
          <input type="hidden" name="mode" value="nonmember" />
          <div class="inputbox">
            <div class="btn_area">
-             <ul>
-               <li>
-                 <input type="image" class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_buystep.jpg" alt="購入手続きへ" name="buystep" id="buystep" />
-               </li>
-             </ul>
+             <input type="submit" class="btn btn-default" name="buystep" id="buystep" value="購入手続きへ" />
            </div>
          </div>
        </form>

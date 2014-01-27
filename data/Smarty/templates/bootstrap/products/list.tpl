@@ -41,24 +41,26 @@
     eccube.submitForm();
   }
   // カゴに入れる
-  function fnInCart(productForm) {
-    var searchForm = $("#form1");
-    var cartForm = $(productForm);
-    // 検索条件を引き継ぐ
-    var hiddenValues = ['mode','category_id','maker_id','name','orderby','disp_number','pageno','rnd'];
-    $.each(hiddenValues, function(){
-      // 商品別のフォームに検索条件の値があれば上書き
-      if (cartForm.has('input[name='+this+']').length != 0) {
-        cartForm.find('input[name='+this+']').val(searchForm.find('input[name='+this+']').val());
-      }
-      // なければ追加
-      else {
-        cartForm.append($('<input type="hidden" />').attr("name", this).val(searchForm.find('input[name='+this+']').val()));
-      }
-    });
-    // 商品別のフォームを送信
-    cartForm.submit();
-  }
+  //function fnInCart(productForm) {
+  //  var searchForm = $("#form1");
+  //  var cartForm = $(productForm);
+
+  //  // 検索条件を引き継ぐ
+  //  var hiddenValues = ['mode','category_id','maker_id','name','orderby','disp_number','pageno','rnd'];
+
+  //  $.each(hiddenValues, function(){
+  //    // 商品別のフォームに検索条件の値があれば上書き
+  //    if (cartForm.has('input[name='+this+']').length != 0) {
+  //      cartForm.find('input[name='+this+']').val(searchForm.find('input[name='+this+']').val());
+  //    }
+  //    // なければ追加
+  //    else {
+  //      cartForm.append($('<input type="hidden" />').attr("name", this).val(searchForm.find('input[name='+this+']').val()));
+  //    }
+  //  });
+  //  // 商品別のフォームを送信
+  //  cartForm.submit();
+  //}
 </script>
 
 <div id="undercolumn">
@@ -160,7 +162,7 @@
   <!--{assign var=id value=$arrProduct.product_id}-->
   <!--{assign var=arrErr value=$arrProduct.arrErr}-->
   <!--▼商品-->
-  <form name="product_form<!--{$id|h}-->" action="?" onsubmit="return false;">
+  <form class="eb-product-list-form" name="product_form<!--{$id|h}-->" action="?">
     <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
     <input type="hidden" name="product_id" value="<!--{$id|h}-->" />
     <input type="hidden" name="product_class_id" id="product_class_id<!--{$id|h}-->" value="<!--{$tpl_product_class_id[$id]}-->" />
@@ -256,7 +258,7 @@
             <div class="cartin_btn">
               <!--★カゴに入れる★-->
               <div id="cartbtn_default_<!--{$id}-->">
-                <input class="btn btn-default" type="submit" id="cart<!--{$id}-->" onclick="fnInCart(this.form); return false;" value="カゴに入れる">
+                <input class="btn btn-default eb-product-list-cartin" type="submit" id="cart<!--{$id}-->" value="カゴに入れる">
               </div>
               <div class="attention" id="cartbtn_dynamic_<!--{$id}-->"></div>
             </div>

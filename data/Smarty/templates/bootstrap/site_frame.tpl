@@ -57,13 +57,15 @@
     <!--{/if}-->
     <!--{* ▲Head COLUMN*}-->
     <!--{/strip}-->
-    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script>
-    <!--script src="<!--{$TPL_URLPATH}-->js/jquery.js"></script-->
+    <!--script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script-->
 
   </head>
 
   <body class="<!--{$tpl_page_class_name|h}-->">
+
     <!--{include file='./site_main.tpl'}-->
+
+    <script src="<!--{$TPL_URLPATH}-->js/jquery.js"></script>
     <script src="<!--{$TPL_URLPATH}-->js/bootstrap/bootstrap.min.js"></script>
     <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.js"></script>
     <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.legacy.js"></script>
@@ -74,6 +76,7 @@
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <!--{/if}-->
     <!--{/if}-->
+    <script src="<!--{$TPL_URLPATH}-->js/jquery.common.js"></script>
     <script>
       <!--{$tpl_javascript}-->
       $(function(){
