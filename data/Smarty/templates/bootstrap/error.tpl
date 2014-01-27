@@ -21,24 +21,19 @@
  *}-->
 
 <!--{strip}-->
-    <div id="undercolumn">
-        <div id="undercolumn_error">
-            <div class="message_area">
-                <!--★エラーメッセージ-->
-                <p class="error"><!--{$tpl_error}--></p>
-            </div>
-
-            <div class="btn_area">
-                <ul>
-                    <li>
-                        <!--{if $return_top}-->
-                            <a href="<!--{$smarty.const.TOP_URL}-->"><img class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_toppage.jpg" alt="トップページへ" /></a>
-                        <!--{else}-->
-                            <a href="javascript:history.back()"><img class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" /></a>
-                        <!--{/if}-->
-                    </li>
-                </ul>
-            </div>
-        </div>
+<div id="undercolumn">
+  <div id="undercolumn_error">
+    <div class="alert alert-warning">
+      <!--{$tpl_error}-->
     </div>
+
+    <div class="btn_area">
+      <!--{if $return_top}-->
+      <a class="btn btn-default" href="<!--{$smarty.const.TOP_URL}-->">トップページへ</a>
+      <!--{else}-->
+      <a class="btn btn-default" href="javascript:history.back()">戻る</a>
+      <!--{/if}-->
+    </div>
+  </div>
+</div>
 <!--{/strip}-->
