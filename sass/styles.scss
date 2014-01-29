@@ -60,3 +60,22 @@ body {
 .today {
   @extend .success;
 }
+
+.eb-form-require {
+  label {
+    &:before {
+      color: red;
+      content: '*';
+    }
+  }
+}
+
+.eb-form-float-control {
+  margin-bottom: 10px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .eb-form-float-control {
+    margin-bottom: 0;
+  }
+}

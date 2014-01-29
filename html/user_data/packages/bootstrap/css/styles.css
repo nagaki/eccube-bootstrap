@@ -7754,3 +7754,21 @@ body {
 .eb-sidebar-calendar td {
   text-align: center;
 }
+
+/* line 66, ../../../../../sass/styles.scss */
+.eb-form-require label:before {
+  color: red;
+  content: '*';
+}
+
+/* line 73, ../../../../../sass/styles.scss */
+.eb-form-float-control {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  /* line 78, ../../../../../sass/styles.scss */
+  .eb-form-float-control {
+    margin-bottom: 0;
+  }
+}
