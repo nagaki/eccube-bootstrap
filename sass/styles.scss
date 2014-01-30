@@ -73,6 +73,14 @@ body {
 .eb-form-float-control {
   margin-bottom: 10px;
 }
+.eb-form-radios {
+  label {
+    @extend .radio-inline;
+    &:before {
+      content: none;
+    }
+  }
+}
 
 @media (min-width: $screen-sm-min) {
   .eb-form-float-control {

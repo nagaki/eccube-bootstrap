@@ -2387,6 +2387,7 @@ textarea.form-control {
 /* line 195, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
+.eb-form-radios label input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: left;
@@ -2400,7 +2401,7 @@ textarea.form-control {
 }
 
 /* line 206, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio-inline,
+.radio-inline, .eb-form-radios label,
 .checkbox-inline {
   display: inline-block;
   padding-left: 20px;
@@ -2411,7 +2412,7 @@ textarea.form-control {
 }
 
 /* line 215, ../../../../../vendor/bundle/ruby/2.1.0/gems/bootstrap-sass-3.0.3.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio-inline + .radio-inline,
+.radio-inline + .radio-inline, .eb-form-radios label + .radio-inline, .eb-form-radios .radio-inline + label, .eb-form-radios label + label,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px;
@@ -2423,8 +2424,9 @@ input[type="checkbox"][disabled], fieldset[disabled]
 input[type="checkbox"],
 .radio[disabled], fieldset[disabled]
 .radio,
-.radio-inline[disabled], fieldset[disabled]
-.radio-inline,
+.radio-inline[disabled],
+.eb-form-radios label[disabled], fieldset[disabled]
+.radio-inline, fieldset[disabled] .eb-form-radios label, .eb-form-radios fieldset[disabled] label,
 .checkbox[disabled], fieldset[disabled]
 .checkbox,
 .checkbox-inline[disabled], fieldset[disabled]
@@ -2490,6 +2492,8 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-warning .radio,
 .has-warning .checkbox,
 .has-warning .radio-inline,
+.has-warning .eb-form-radios label,
+.eb-form-radios .has-warning label,
 .has-warning .checkbox-inline {
   color: #8a6d3b;
 }
@@ -2518,6 +2522,8 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-error .radio,
 .has-error .checkbox,
 .has-error .radio-inline,
+.has-error .eb-form-radios label,
+.eb-form-radios .has-error label,
 .has-error .checkbox-inline {
   color: #a94442;
 }
@@ -2546,6 +2552,8 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .has-success .radio,
 .has-success .checkbox,
 .has-success .radio-inline,
+.has-success .eb-form-radios label,
+.eb-form-radios .has-success label,
 .has-success .checkbox-inline {
   color: #3c763d;
 }
@@ -2619,6 +2627,8 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .form-horizontal .radio,
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
+.form-horizontal .eb-form-radios label,
+.eb-form-radios .form-horizontal label,
 .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
@@ -7766,8 +7776,13 @@ body {
   margin-bottom: 10px;
 }
 
+/* line 79, ../../../../../sass/styles.scss */
+.eb-form-radios label:before {
+  content: none;
+}
+
 @media (min-width: 768px) {
-  /* line 78, ../../../../../sass/styles.scss */
+  /* line 86, ../../../../../sass/styles.scss */
   .eb-form-float-control {
     margin-bottom: 0;
   }
