@@ -1,4 +1,4 @@
-<!--{printXMLDeclaration}--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <!--{*
  * This file is part of EC-CUBE
  *
@@ -21,34 +21,24 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=<!--{$smarty.const.CHAR_CODE}-->" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/import.css" type="text/css" media="all" />
-<link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.colorbox/colorbox.css" type="text/css" media="all" />
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.js"></script>
-<!-- #2342 次期メジャーバージョン(2.14)にてeccube.legacy.jsは削除予定.モジュール、プラグインの互換性を考慮して2.13では残します. -->
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.legacy.js"></script>
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.colorbox/jquery.colorbox-min.js"></script>
-<title><!--{$arrSiteInfo.shop_name}-->/<!--{$subtitle|h}--></title>
-<link rel="shortcut icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico" />
-<link rel="icon" type="image/vnd.microsoft.icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico" />
-<script type="text/javascript">//<![CDATA[
-    <!--{$tpl_javascript}-->
-    $(function(){
+<html lang="ja">
+  <head>
+    <meta charset="<!--{$smarty.const.CHAR_CODE}-->">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.colorbox/colorbox.css" />
+    <link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/styles.css" media="all" />
+    <title><!--{$arrSiteInfo.shop_name}-->/<!--{$subtitle|h}--></title>
+    <script type="text/javascript">
+      <!--{$tpl_javascript}-->
+      $(function(){
         <!--{$tpl_onload}-->
-    });
-//]]></script>
-</head>
+      });
+    </script>
+  </head>
+  <body class="eb-body-popup">
 
-<body>
-<noscript>
-    <p><em>JavaScriptを有効にしてご利用下さい.</em></p>
-</noscript>
-
-<a name="top" id="top"></a>
-
-<!--{if !$disable_wincol}--><div id="windowcolumn"><!--{/if}-->
+    <noscript>
+      <p>JavaScriptを有効にしてご利用下さい</p>
+    </noscript>
+    <div class="col-md-12">
+      <!--{if !$disable_wincol}--><div id="windowcolumn"><!--{/if}-->

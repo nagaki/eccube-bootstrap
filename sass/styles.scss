@@ -82,6 +82,14 @@ body {
   }
 }
 
+.eb-body-popup {
+  padding-top: 0;
+}
+
+.eb-text-large {
+  font-size: 150%;
+}
+
 @media (min-width: $screen-sm-min) {
   .eb-form-float-control {
     margin-bottom: 0;

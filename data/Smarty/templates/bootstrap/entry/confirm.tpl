@@ -21,34 +21,24 @@
  *}-->
 
 <div id="undercolumn">
-    <div id="undercolumn_entry">
-        <h2 class="title"><!--{$tpl_title|h}--></h2>
-        <p>下記の内容で送信してもよろしいでしょうか？<br />
-            よろしければ、一番下の「会員登録をする」ボタンをクリックしてください。</p>
-        <form name="form1" id="form1" method="post" action="?">
-            <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
-            <input type="hidden" name="mode" value="complete">
-            <!--{foreach from=$arrForm key=key item=item}-->
-                <input type="hidden" name="<!--{$key|h}-->" value="<!--{$item.value|h}-->" />
-            <!--{/foreach}-->
+  <div id="undercolumn_entry">
+    <h2 class="title"><!--{$tpl_title|h}--></h2>
+    <p>下記の内容で送信してもよろしいでしょうか？
+      よろしければ、一番下の「会員登録をする」ボタンをクリックしてください。</p>
+    <form name="form1" id="form1" method="post" action="?">
+      <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
+      <input type="hidden" name="mode" value="complete">
+      <!--{foreach from=$arrForm key=key item=item}-->
+      <input type="hidden" name="<!--{$key|h}-->" value="<!--{$item.value|h}-->" />
+      <!--{/foreach}-->
 
-            <table summary="入力内容確認">
-                <!--{include file="`$smarty.const.TEMPLATE_REALDIR`frontparts/form_personal_confirm.tpl" flgFields=3 emailMobile=false prefix=""}-->
-            </table>
+        <!--{include file="`$smarty.const.TEMPLATE_REALDIR`frontparts/form_personal_confirm.tpl" flgFields=3 emailMobile=false prefix=""}-->
 
-            <div class="btn_area">
-                <ul>
-                    <li>
-                        <a href="?" onclick="eccube.setModeAndSubmit('return', '', ''); return false;">
-                            <img class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" />
-                        </a>
-                    </li>
-                    <li>
-                        <input type="image" class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_entry.jpg" alt="会員登録をする" name="send" id="send" />
-                    </li>
-                </ul>
-            </div>
+      <div class="btn_area">
+        <a class="btn btn-default" href="?" onclick="eccube.setModeAndSubmit('return', '', ''); return false;">戻る</a>
+        <input class="btn btn-default" type="submit" value="会員登録をする" name="send" id="send" />
+      </div>
 
-        </form>
-    </div>
+    </form>
+  </div>
 </div>

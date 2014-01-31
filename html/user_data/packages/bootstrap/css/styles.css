@@ -7781,8 +7781,18 @@ body {
   content: none;
 }
 
+/* line 85, ../../../../../sass/styles.scss */
+.eb-body-popup {
+  padding-top: 0;
+}
+
+/* line 89, ../../../../../sass/styles.scss */
+.eb-text-large {
+  font-size: 150%;
+}
+
 @media (min-width: 768px) {
-  /* line 86, ../../../../../sass/styles.scss */
+  /* line 94, ../../../../../sass/styles.scss */
   .eb-form-float-control {
     margin-bottom: 0;
   }

@@ -20,6 +20,12 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
 
-</div>
-</body>
+      </div>
+    </div>
+    <script src="<!--{$TPL_URLPATH}-->js/jquery.js"></script>
+    <script src="<!--{$TPL_URLPATH}-->js/bootstrap/bootstrap.min.js"></script>
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.js"></script>
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.legacy.js"></script>
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.colorbox/jquery.colorbox-min.js"></script>
+  </body>
 </html>
