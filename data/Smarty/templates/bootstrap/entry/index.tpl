@@ -34,7 +34,7 @@
        <!--{include file="`$smarty.const.TEMPLATE_REALDIR`frontparts/form_personal_input.tpl" flgFields=3 emailMobile=false prefix=""}-->
 
        <div class="btn_area">
-         <input type="submit" value="確認ページへ" name="confirm" id="confirm" />
+         <input class="btn btn-default" type="submit" value="確認ページへ" name="confirm" id="confirm" />
        </div>
 
      </form>

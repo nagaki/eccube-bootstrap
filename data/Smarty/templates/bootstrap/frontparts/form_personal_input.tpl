@@ -24,16 +24,11 @@
 
 <!--{strip}-->
 
-<div class="form-group eb-form-require<!--{if $arrErr}--> has-error<!--{/if}-->">
-  <label class="control-label col-sm-3" for=""></label>
-  <div class="col-sm-">
-  </div>
-  <!--{if $arrErr}-->
-  <p class="help-block col-sm-9 col-sm-offset-3">
-    <span><!--{$arrErr}--></span>
-  </p>
-  <!--{/if}-->
+<!--{if $arrErr}-->
+<div class="alert alert-warning">
+  <p>入力内容を修正してください</p>
 </div>
+<!--{/if}-->
 
 <fieldset>
   <legend>お名前</legend>
@@ -149,7 +144,7 @@
     </p>
   </div>
   <!--{assign var=key3 value="`$prefix`pref"}-->
-  <div class="form-group <!--{if $arrErr[$key3]}-->has-error<!--{/if}-->">
+  <div class="form-group eb-form-require<!--{if $arrErr[$key3]}--> has-error<!--{/if}-->">
     <label class="control-label col-sm-3">都道府県名</label>
     <div class="col-sm-3">
       <select class="form-control" name="<!--{$key3}-->">
@@ -162,7 +157,7 @@
     <!--{/if}-->
   </div>
   <!--{assign var=key4 value="`$prefix`addr01"}-->
-  <div class="form-group <!--{if $arrErr[$key4]}-->has-error<!--{/if}-->">
+  <div class="form-group eb-form-require<!--{if $arrErr[$key4]}--> has-error<!--{/if}-->">
     <label class="control-label col-sm-3">市区町村名</label>
     <div class="col-sm-5">
       <input class="form-control" type="text" name="<!--{$key4}-->" value="<!--{$arrForm[$key4].value|h}-->" placeholder="<!--{$smarty.const.SAMPLE_ADDRESS1}-->" />
@@ -172,7 +167,7 @@
     <!--{/if}-->
   </div>
   <!--{assign var=key5 value="`$prefix`addr02"}-->
-  <div class="form-group <!--{if $arrErr[$key5]}-->has-error<!--{/if}-->">
+  <div class="form-group eb-form-require<!--{if $arrErr[$key5]}--> has-error<!--{/if}-->">
     <label class="control-label col-sm-3">番地・マンション名</label>
     <div class="col-sm-5">
       <input class="form-control" type="text" name="<!--{$key5}-->" value="<!--{$arrForm[$key5].value|h}-->" placeholder="<!--{$smarty.const.SAMPLE_ADDRESS2}-->" />
@@ -190,13 +185,13 @@
     <div class="form-group <!--{if $arrErr[$key1] || $arrErr[$key2] || $arrErr[$key3]}-->has-error<!--{/if}-->">
       <label class="control-label col-sm-3" for="">電話番号</label>
       <div class="col-sm-2">
-        <input class="form-control eb-form-float-control" type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value|h}-->" maxlength="<!--{$arrForm[$key1].length}-->" />
+        <input class="form-control eb-form-float-control" type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value|h}-->" maxlength="<!--{$arrForm[$key1].length}-->" placeholder="01" />
       </div>
       <div class="col-sm-2">
-        <input class="form-control eb-form-float-control" type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" maxlength="<!--{$arrForm[$key2].length}-->" />
+        <input class="form-control eb-form-float-control" type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" maxlength="<!--{$arrForm[$key2].length}-->" placeholder="2345" />
       </div>
       <div class="col-sm-2">
-        <input class="form-control eb-form-float-control" type="text" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|h}-->" maxlength="<!--{$arrForm[$key3].length}-->" />
+        <input class="form-control eb-form-float-control" type="text" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|h}-->" maxlength="<!--{$arrForm[$key3].length}-->" placeholder="6789" />
       </div>
       <!--{if $arrErr[$key1] || $arrErr[$key2] || $arrErr[$key3]}-->
       <p class="help-block col-sm-9 col-sm-offset-3">
@@ -212,13 +207,13 @@
     <div class="form-group <!--{if $arrErr[$key1] || $arrErr[$key2] || $arrErr[$key3]}-->has-error<!--{/if}-->">
       <label class="control-label col-sm-3" for="">FAX番号</label>
       <div class="col-sm-2">
-        <input class="form-control eb-form-float-control" type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value|h}-->" maxlength="<!--{$arrForm[$key1].length}-->" />
+        <input class="form-control eb-form-float-control" type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value|h}-->" maxlength="<!--{$arrForm[$key1].length}-->" placeholder="01" />
       </div>
       <div class="col-sm-2">
-        <input class="form-control eb-form-float-control" type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" maxlength="<!--{$arrForm[$key2].length}-->" />
+        <input class="form-control eb-form-float-control" type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" maxlength="<!--{$arrForm[$key2].length}-->" placeholder="2345" />
       </div>
       <div class="col-sm-2">
-        <input class="form-control eb-form-float-control" type="text" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|h}-->" maxlength="<!--{$arrForm[$key3].length}-->" />
+        <input class="form-control eb-form-float-control" type="text" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|h}-->" maxlength="<!--{$arrForm[$key3].length}-->" placeholder="6789" />
       </div>
       <!--{if $arrErr[$key1] || $arrErr[$key2] || $arrErr[$key3]}-->
       <p class="help-block col-sm-9 col-sm-offset-3">
@@ -234,7 +229,7 @@
       <div class="form-group eb-form-require <!--{if $arrErr[$key1]}-->has-error<!--{/if}-->">
         <label class="control-label col-sm-3" for="">メールアドレス</label>
         <div class="col-sm-4">
-          <input class="form-control" type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value|h}-->" />
+          <input class="form-control" type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value|h}-->" placeholder="example@example.com" />
         </div>
         <!--{if $arrErr[$key1]}-->
         <p class="help-block"><!--{$arrErr[$key1]}--></p>
@@ -247,7 +242,7 @@
       </div>
       <div class="form-group eb-form-require <!--{if $arrErr[$key2]}-->has-error<!--{/if}-->">
         <div class="col-sm-4 col-sm-offset-3">
-          <input class="form-control" type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" />
+          <input class="form-control" type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" placeholder="example@example.com" />
         </div>
         <!--{if $arrErr[$key2]}-->
         <p class="help-block"><!--{$arrErr[$key2]}--></p>
@@ -298,7 +293,7 @@
       <!--{/if}-->
     </div>
     <!--{assign var=key1 value="`$prefix`job"}-->
-    <div class="form-group eb-form-require<!--{if $arrErr[$key1]}--> has-error<!--{/if}-->">
+    <div class="form-group <!--{if $arrErr[$key1]}--> has-error<!--{/if}-->">
       <label class="control-label col-sm-3" for="">ご職業</label>
       <div class="col-sm-5">
         <select class="form-control" name="<!--{$key1}-->">
@@ -375,24 +370,34 @@
         <p class="help-block"><!--{$arrErr[$key2]}--></p>
         <!--{/if}-->
       </div>
-
-      パスワードを忘れた時のヒント※
+      <div class="row">
+        <p class="col-sm-9 col-sm-offset-3">
+          パスワードのヒント
+        </p>
+      </div>
       <!--{assign var=key1 value="`$prefix`reminder"}-->
-      質問：
-      <select name="<!--{$key1}-->">
-        <option value="" selected="selected">選択してください</option>
-        <!--{html_options options=$arrReminder selected=$arrForm[$key1].value}-->
-      </select>
-      <!--{if $arrErr[$key1]}-->
-        <!--{$arrErr[$key1]}-->
-      <!--{/if}-->
-
+      <div class="form-group eb-form-require <!--{if $arrErr[$key1]}-->has-error<!--{/if}-->">
+        <label class="control-label col-sm-3" for="">質問</label>
+        <div class="col-sm-4">
+          <select class="form-control" name="<!--{$key1}-->">
+            <option value="" selected="selected">選択してください</option>
+            <!--{html_options options=$arrReminder selected=$arrForm[$key1].value}-->
+          </select>
+        </div>
+        <!--{if $arrErr[$key1]}-->
+        <p class="help-block"><!--{$arrErr[$key1]}--></p>
+        <!--{/if}-->
+      </div>
       <!--{assign var=key2 value="`$prefix`reminder_answer"}-->
-      答え：
-      <input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" />
-      <!--{if $arrErr[$key2]}-->
-        <!--{$arrErr[$key2]}-->
-      <!--{/if}-->
+      <div class="form-group eb-form-require <!--{if $arrErr[$key2]}-->has-error<!--{/if}-->">
+        <label class="control-label col-sm-3" for="">答え</label>
+        <div class="col-sm-4">
+          <input class="form-control" type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value|h}-->" />
+        </div>
+        <!--{if $arrErr[$key2]}-->
+        <p class="help-block"><!--{$arrErr[$key2]}--></p>
+        <!--{/if}-->
+      </div>
     </fieldset>
 
     <fieldset>
