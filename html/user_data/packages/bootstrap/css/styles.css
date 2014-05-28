@@ -7782,17 +7782,22 @@ body {
 }
 
 /* line 85, ../../../../../sass/styles.scss */
+.eb-mypage-nav {
+  margin-bottom: 10px;
+}
+
+/* line 89, ../../../../../sass/styles.scss */
 .eb-body-popup {
   padding-top: 0;
 }
 
-/* line 89, ../../../../../sass/styles.scss */
+/* line 93, ../../../../../sass/styles.scss */
 .eb-text-large {
   font-size: 150%;
 }
 
 @media (min-width: 768px) {
-  /* line 94, ../../../../../sass/styles.scss */
+  /* line 98, ../../../../../sass/styles.scss */
   .eb-form-float-control {
     margin-bottom: 0;
   }
