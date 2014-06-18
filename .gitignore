@@ -56,3 +56,15 @@ html/user_data/templates/
 *.ttf
 *.txt
 *.xml
+
+.coveralls.yml
+.travis.yml
+composer.json
+
+# Bundler
+.bundle/
+Gemfile.lock
+vendor/
+
+# Compass
+.sass-cache

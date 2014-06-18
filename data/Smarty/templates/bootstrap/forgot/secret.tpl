@@ -1,7 +1,7 @@
 <!--{*
  * This file is part of EC-CUBE
  *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ * Copyright(c) 2000-2013 LOCKON CO.,LTD. All Rights Reserved.
  *
  * http://www.lockon.co.jp/
  *
@@ -22,29 +22,42 @@
 
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="パスワードを忘れた方(確認ページ)"}-->
 
-<div>
-  <h2>パスワードの再発行 秘密の質問の確認</h2>
-  <p class="information">ご登録時に入力した下記質問の答えを入力して「次へ」ボタンをクリックしてください。</p>
-  <div class="alert alert-block">下記質問の答えをお忘れになられた場合は、<a href="mailto:<!--{$arrSiteInfo.email02|escape:'hex'}-->"><!--{$arrSiteInfo.email02|escape:'hexentitiy'}--></a>までご連絡ください。</div>
-  <div class="alert alert-block">新しくパスワードを発行いたしますので、現在のパスワードはご利用できなくなります。ご了承下さい。</div>
-  <form class="form-horizontal" action="?" method="post" name="form1">
-    <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->">
-    <input type="hidden" name="mode" value="secret_check">
+<div id="window_area">
+  <h2>パスワードの再発行</h2>
+  <p>
+    ご登録時に入力した下記質問の答えを入力して「次へ」ボタンをクリックしてください。<br>
+  </p>
+  <div class="alert alert-info">
+    <p>下記質問の答えをお忘れになられた場合は、<a href="mailto:<!--{$arrSiteInfo.email02|escape:'hex'}-->"><!--{$arrSiteInfo.email02|escape:'hexentitiy'}--></a>までご連絡ください。</p>
+  </div>
+  <!--{if $errmsg}-->
+  <div class="alert alert-warning">
+    <p><!--{$errmsg}--></p>
+  </div>
+  <!--{/if}-->
+  <form action="?" method="post" name="form1">
+    <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
+    <input type="hidden" name="mode" value="secret_check" />
     <!--{foreach key=key item=item from=$arrForm}-->
-      <!--{if $key ne 'reminder_answer'}-->
-      <input type="hidden" name="<!--{$key}-->" value="<!--{$item|h}-->">
-      <!--{/if}-->
+    <!--{if $key ne 'reminder_answer'}-->
+    <input type="hidden" name="<!--{$key}-->" value="<!--{$item|h}-->" />
+    <!--{/if}-->
     <!--{/foreach}-->
-    <div class="control-group">
-      <label class="control-label"><!--{$arrReminder[$arrForm.reminder]}--></label>
-      <div class="controls">
-        <span class="attention"><!--{$arrErr.reminder}--><!--{$arrErr.reminder_answer}--></span>
-        <span class="attention"><!--{$errmsg}--></span>
-        <!--★答え入力★--><input type="text" name="reminder_answer" value="">
+    <fieldset>
+      <legend>秘密の質問の確認</legend>
+      <div class="form-group<!--{if $arrErr.reminder || $arrErr.reminder_answer}--> has-error<!--{/if}-->">
+        <label class="" for=""><!--{$arrReminder[$arrForm.reminder]}--></label>
+        <input class="form-control" type="text" name="reminder_answer" value="" />
+        <!--{if $arrErr.reminder || $arrErr.reminder_answer}-->
+        <p class="help-block">
+          <span><!--{$arrErr.reminder}--></span>
+          <span><!--{$arrErr.reminder_answer}--></span>
+        </p>
+        <!--{/if}-->
       </div>
-    </div>
-    <div class="form-actions">
-      <button class="btn btn-primary" type="submit" name="next" id="next">次へ</button>
+    </fieldset>
+    <div class="btn_area">
+      <input class="btn btn-default" type="submit" value="次へ" name="next" id="next" />
     </div>
   </form>
 </div>

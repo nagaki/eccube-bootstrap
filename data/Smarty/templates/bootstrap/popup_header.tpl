@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <!--{*
  * This file is part of EC-CUBE
  *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ * Copyright(c) 2000-2013 LOCKON CO.,LTD. All Rights Reserved.
  *
  * http://www.lockon.co.jp/
  *
@@ -19,61 +20,25 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<!DOCTYPE html>
+
 <html lang="ja">
   <head>
-
     <meta charset="<!--{$smarty.const.CHAR_CODE}-->">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-
-    <link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/style.css" media="all">
-    <link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/bootstrap-responsive.min.css" media="all">
-    <link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/style-responsive.css" media="all">
-
-    <title><!--{$subtitle|h}--> | <!--{$arrSiteInfo.shop_name}--></title>
-
-    <link rel="shortcut icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico">
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/win_op.js"></script>
-    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/site.js"></script>
-    <script src="<!--{$TPL_URLPATH}-->js/jquery-1.7.2.min.js"></script>
-    <script src="<!--{$TPL_URLPATH}-->js/bootstrap.min.js"></script>
-    <script src="<!--{$TPL_URLPATH}-->js/jquery.common.js"></script>
-
-    <script>
-    <!--{$tpl_javascript}-->
-    jQuery(function($){
-      <!--{$tpl_onload}-->
-    });
+    <link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.colorbox/colorbox.css" />
+    <link rel="stylesheet" href="<!--{$TPL_URLPATH}-->css/styles.css" media="all" />
+    <title><!--{$arrSiteInfo.shop_name}-->/<!--{$subtitle|h}--></title>
+    <script type="text/javascript">
+      <!--{$tpl_javascript}-->
+      $(function(){
+        <!--{$tpl_onload}-->
+      });
     </script>
-
   </head>
-
-  <body class="popup-window">
+  <body class="eb-body-popup">
 
     <noscript>
-    <p><em>JavaScriptを有効にしてご利用下さい.</em></p>
+      <p>JavaScriptを有効にしてご利用下さい</p>
     </noscript>
-
-    <header>
-      <section class="navbar navbar-fixed-top navbar-inverse">
-        <div class="navbar-inner">
-          <div class="container">
-            <h1 id="global-title">
-              <span class="brand"><!--{$arrSiteInfo.shop_name|h}--></span>
-            </h1>
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <!--{if !$disable_wincol}-->
-    <div class="container popup-wrapper">
-    <!--{/if}-->
-
+    <div class="col-md-12">
+      <!--{if !$disable_wincol}--><div id="windowcolumn"><!--{/if}-->

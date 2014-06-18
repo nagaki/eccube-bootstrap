@@ -1,7 +1,7 @@
 <!--{*
  * This file is part of EC-CUBE
  *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ * Copyright(c) 2000-2013 LOCKON CO.,LTD. All Rights Reserved.
  *
  * http://www.lockon.co.jp/
  *
@@ -22,36 +22,49 @@
 
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="パスワードを忘れた方(入力ページ)"}-->
 
-<section class="page-body" id="makenew-password-area">
-  <header>
-    <h1>パスワードの再発行</h1>
-  </header>
-  <aritcle id="makenew-password">
-    <p class="information">ご登録時のメールアドレスと、ご登録されたお名前を入力して「次へ」ボタンをクリックしてください。</p>
-    <div class="alert alert-block">新しくパスワードを発行いたしますので、現在のパスワードはご利用できなくなります。ご了承下さい。</div>
-    <form class="form-horizontal" action="?" method="post" name="form1">
-      <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->">
-      <input type="hidden" name="mode" value="mail_check">
-      <div class="control-group">
-        <label class="control-label" for="entry-email">登録されているメールアドレス</label>
-        <div class="controls">
-          <span class="attention"><!--{$arrErr.email}--></span>
-          <input id="entry-email" type="text" name="email" value="<!--{$arrForm.email|default:$tpl_login_email|h}-->">
+<div id="window_area">
+  <h2>パスワードの再発行</h2>
+  <p>ご登録時のメールアドレスと、ご登録されたお名前を入力して「次へ」ボタンをクリックしてください。</p>
+  <!--{if $errmsg}-->
+  <div class="alert alert-warning">
+    <!--{$errmsg}-->
+  </div>
+  <!--{/if}-->
+  <form action="?" method="post" name="form1">
+    <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
+    <input type="hidden" name="mode" value="mail_check" />
+    <div id="forgot">
+      <div class="form-group<!--{if $arrErr.email}--> has-error<!--{/if}-->">
+        <label class="">メールアドレス</label>
+        <input class="form-control" type="text" name="email" value="<!--{$arrForm.email|default:$tpl_login_email|h}-->" placeholder="example@example.com" />
+        <!--{if $arrErr.email}-->
+        <p class="help-block">
+          <span><!--{$arrErr.email}--></span>
+        </p>
+        <!--{/if}-->
+      </div>
+      <div class="form-group<!--{if $arrErr.name01 || $arrErr.name02}--> has-error<!--{/if}-->">
+        <label class="">お名前</label>
+        <div class="row">
+          <div class="col-xs-6">
+            <input class="form-control" type="text" name="name01" value="<!--{$arrForm.name01|default:''|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" placeholder="姓" />
+          </div>
+          <div class="col-xs-6">
+            <input class="form-control" type="text" name="name02" value="<!--{$arrForm.name02|default:''|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" placeholder="名" />
+          </div>
         </div>
+        <!--{if $arrErr.name01 || $arrErr.name02}-->
+        <p class="help-block">
+          <span><!--{$arrErr.name01}--></span>
+          <span><!--{$arrErr.name02}--></span>
+        </p>
+        <!--{/if}-->
       </div>
-      <div class="control-group">
-        <label class="control-label" for="entry-surname">登録されているお名前</label>
-        <div class="controls">
-          <span class="attention"><!--{$arrErr.name01}--><!--{$arrErr.name02}--><!--{$errmsg}--></span>
-          <input id="entry-surname" type="text" class="input-medium" name="name01" value="<!--{$arrForm.name01|default:''|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" placeholder="姓">
-          <input type="text" class="input-medium" name="name02" value="<!--{$arrForm.name02|default:''|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" placeholder="名">
-        </div>
-      </div>
-      <div class="form-actions">
-        <button class="btn btn-primary" type="submit" name="next" id="next">次へ</button>
-      </div>
-    </form>
-  </article>
-</section>
+    </div>
+    <div class="btn_area">
+      <input class="btn btn-default" type="submit" value="次へ" name="next" id="next" />
+    </div>
+  </form>
+</div>
 
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_footer.tpl"}-->

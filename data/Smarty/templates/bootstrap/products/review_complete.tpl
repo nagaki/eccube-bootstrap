@@ -1,7 +1,7 @@
 <!--{*
  * This file is part of EC-CUBE
  *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ * Copyright(c) 2000-2013 LOCKON CO.,LTD. All Rights Reserved.
  *
  * http://www.lockon.co.jp/
  *
@@ -19,24 +19,24 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
+<!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="お客様の声書き込み（完了ページ）"}-->
 
-<!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="レビュー投稿（完了ページ）"}-->
-
-<section class="page-body" id="review-complete-area">
-  <header>
-    <h1>レビュー投稿</h1>
-  </header>
-  <article id="review-complete-contents">
+<div id="window_area">
+    <h2 class="title">お客様の声書き込み</h2>
     <div id="completebox">
-      <div class="alert aelrt-success">
-        投稿が完了しました。ご利用ありがとうございました。
-      </div>
-      <p>なお、投稿いただきましたレビューは、弊社にて投稿内容を確認後、<br>ウェブサイトに反映させていただきます。今しばらくお待ちくださいませ。</p>
+        <p class="message">登録が完了しました。ご利用ありがとうございました。</p>
+        <p>弊社にて登録内容を確認後、ホームページに反映させていただきます。<br />
+            今しばらくお待ちくださいませ。</p>
     </div>
-    <div class="form-actions">
-      <a class="btn" href="javascript:window.close()">閉じる</a>
+    <div class="btn_area">
+        <ul>
+            <li>
+                <a href="javascript:window.close()">
+                    <img class="hover_change_image" src="<!--{$TPL_URLPATH}-->img/button/btn_close.jpg" alt="閉じる" />
+                </a>
+            </li>
+        </ul>
     </div>
-  </article>
-</section>
+</div>
 
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_footer.tpl"}-->
