@@ -159,8 +159,8 @@
       <!--{if $arrErr[$key1]}-->
       <div class="attention"><!--{$arrErr[$key1]}--></div>
       <!--{/if}-->
-      <label for="man" class="radio inline" for="man"><input type="radio" id="man" name="<!--{$key1}-->" value="1" class="required"<!--{if $arrForm[$key1] eq 1}--> checked="checked" <!--{/if}-->>男性</label>
-      <label for="woman" class="radio inline"for="woman"><input type="radio" id="woman" name="<!--{$key1}-->" value="2" class="required"<!--{if $arrForm[$key1] eq 2}--> checked="checked" <!--{/if}-->>女性</label>
+      <label for="man" class="radio inline" for="man"><input type="radio" id="man" name="<!--{$key1}-->" value="1" class="required"<!--{if $arrForm[$key1].value eq 1}--> checked="checked" <!--{/if}-->>男性</label>
+      <label for="woman" class="radio inline"for="woman"><input type="radio" id="woman" name="<!--{$key1}-->" value="2" class="required"<!--{if $arrForm[$key1].value eq 2}--> checked="checked" <!--{/if}-->>女性</label>
     </div>
   </div>
   <div class="control-group">
