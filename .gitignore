@@ -1,6 +1,11 @@
 # files
 .DS_Store
 .htaccess
+.coveralls.yml
+Gruntfile.js
+composer.json
+package.json
+phpunit.xml.dist
 
 # EC CUBE root DIR
 COPYING
