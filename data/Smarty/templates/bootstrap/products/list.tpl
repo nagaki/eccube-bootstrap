@@ -20,7 +20,6 @@
 * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 *}-->
 
-<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/products.js"></script>
 <script>
   function fnSetClassCategories(form, classcat_id2_selected) {
     var $form = $(form);

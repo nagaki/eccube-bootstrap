@@ -20,16 +20,6 @@
 * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 *}-->
 
-<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.js"></script>
-<link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.css" media="screen">
-<script>
-  jQuery(function ($) {
-    $("a.expansion").facebox({
-      loadingImage : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/loading.jpg',
-      closeImage   : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.png'
-    });
-  });
-</script>
 <section class="page-body" id="shopping-multiple-area">
   <aside class="progress progress-striped active">
     <div id="shopping-flow-chart" class="bar" style="width: 25%;" rel="tooltip" title="お届け先の指定">STEP 1</div>
