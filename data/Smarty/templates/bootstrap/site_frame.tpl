@@ -51,9 +51,16 @@
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/win_op.js"></script>
-    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/site.js"></script>
-    <script src="<!--{$TPL_URLPATH}-->js/jquery-1.7.2.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.11.1.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-2.1.1.min.js"></script>
+    <!--<![endif]-->
+
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.js"></script>
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/eccube.legacy.js"></script>
+    <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.colorbox/jquery.colorbox-min.js"></script>
     <script src="<!--{$TPL_URLPATH}-->js/bootstrap.min.js"></script>
     <script src="<!--{$TPL_URLPATH}-->js/jquery.common.js"></script>
 

@@ -42,7 +42,7 @@
           <!--{include file="`$smarty.const.TEMPLATE_REALDIR`frontparts/form_personal_input.tpl" flgFields=3 emailMobile=true prefix=""}-->
         </div>
         <footer class="form-actions">
-          <button class="btn btn-primary" type="submit" name="refusal" id="refusal" disabled="disabled">確認ページヘ</button>
+          <button class="btn btn-primary" type="submit" name="refusal" id="refusal">確認ページヘ</button>
         </footer>
       </section>
     </form>

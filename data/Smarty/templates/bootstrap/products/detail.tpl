@@ -20,9 +20,6 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
 
-<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/products.js"></script>
-<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.js"></script>
-<link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.css" media="screen">
 <script>
   // 規格2に選択肢を割り当てる。
   function fnSetClassCategories(form, classcat_id2_selected) {
@@ -32,12 +29,6 @@
     var $sele2 = $form.find('select[name=classcategory_id2]');
     setClassCategories($form, product_id, $sele1, $sele2, classcat_id2_selected);
   }
-  jQuery(function($) {
-    $('a.expansion').facebox({
-      loadingImage : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/loading.gif',
-      closeImage   : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.png'
-    });
-  });
 </script>
 <form name="form1" id="form1" method="post" action="?">
   <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->">
@@ -245,17 +236,20 @@
         <a class="btn btn-success" href="javascript:fnChangeAction('?product_id=<!--{$arrProduct.product_id|h}-->'); fnModeSubmit('add_favorite','favorite_product_id','<!--{$arrProduct.product_id|h}-->');" id="add-favorite-product" rel="popover" data-content="お気に入りに登録すると、マイページからこの商品を参照できるようになります。" data-original-title="お気に入りに登録する"><i class="icon-star icon-white"></i>お気に入りに登録する</a>
         <!--{else}-->
         <button class="btn disabled" id="add_favorite_product" disabled="disabled">お気に入り登録済</button>
-        <script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.tipsy.js"></script>
-        <script>
-          var favoriteButton = $("#add_favorite_product");
-          favoriteButton.tipsy({gravity: $.fn.tipsy.autoNS, fallback: "お気に入りに登録済み", fade: true });
-      
-          <!--{if $just_added_favorite == true}-->
-          favoriteButton.load(function(){$(this).tipsy("show")});
-          $(function(){
-            var tid = setTimeout('favoriteButton.tipsy("hide")',5000);
-          });
-          <!--{/if}-->
+        <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/jquery.ui.core.min.js"></script>
+        <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/jquery.ui.widget.min.js"></script>
+        <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/jquery.ui.position.min.js"></script>
+        <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/jquery.ui.tooltip.min.js"></script>
+        <script type="text/javascript">
+            var favoriteButton = $("#add_favorite_product");
+            favoriteButton.tooltip();
+
+            <!--{if $just_added_favorite == true}-->
+            favoriteButton.load(function(){ $(this).tooltip("open") });
+            $(function(){
+                var tid = setTimeout('favoriteButton.tooltip("close")',5000);
+            });
+            <!--{/if}-->
         </script>
         <!--{/if}-->
       </div>

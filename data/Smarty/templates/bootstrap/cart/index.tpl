@@ -20,16 +20,6 @@
 * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 *}-->
 
-<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.js"></script>
-<link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.css" media="screen">
-<script>
-  $(document).ready(function() {
-    $('a.expansion').facebox({
-      loadingImage : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/loading.gif',
-      closeImage   : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.png'
-    });
-  });
-</script>
 <section class="page-body" id="cart-area">
   <header>
     <h1><!--{$tpl_title|h}--></h1>

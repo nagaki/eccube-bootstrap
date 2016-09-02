@@ -20,8 +20,6 @@
 * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 *}-->
 
-<script src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.js"></script>
-<link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.css" media="screen">
 <script>
   var send = true;
 
@@ -34,13 +32,6 @@
       return false;
     }
   }
-
-$(document).ready(function() {
-    $('a.expansion').facebox({
-loadingImage : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/loading.gif',
-closeImage   : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.png'
-});
-    });
 </script>
 
 <!--CONTENTS-->
@@ -65,7 +56,7 @@ closeImage   : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.
         <!--{if $use_module}-->
         <button class="btn btn-large btn-primary" type="submit" onclick="return fnCheckSubmit();" id="next-top">次へ</button>
         <!--{else}-->
-        <button class="btn btn-large btn-primary" type="submit" onclick="return fnCheckSubmit();" id="next-top" disabled="disabled">ご注文完了ページヘ</button>
+        <button class="btn btn-large btn-primary" type="submit" onclick="return fnCheckSubmit();" id="next-top">ご注文完了ページヘ</button>
         <!--{/if}-->
       </div>
       <section class="bloc-body">
@@ -319,9 +310,9 @@ closeImage   : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.
       <div class="form-actions">
         <a class="btn btn-large" href="./payment.php">戻る</a>
         <!--{if $use_module}-->
-        <button class="btn btn-large btn-primary" type="submit" onclick="return fnCheckSubmit();" name="next" id="next" disabled="disabled">次へ</button>
+        <button class="btn btn-large btn-primary" type="submit" onclick="return fnCheckSubmit();" name="next" id="next">次へ</button>
         <!--{else}-->
-        <button class="btn btn-large btn-primary" type="submit" onclick="return fnCheckSubmit();" name="next" id="next" disabled="disabled">ご注文完了ページへ</button>
+        <button class="btn btn-large btn-primary" type="submit" onclick="return fnCheckSubmit();" name="next" id="next">ご注文完了ページへ</button>
         <!--{/if}-->
       </div>
     </form>
